@@ -102,7 +102,7 @@ int main() {
     // Enable non-blocking input
     set_nonblocking_input(1);
 
-    printf("\nYou can type 'draw' at any time to draw a digit, or 'display' to display images from the most recent batch, along with any hand-drawn images.\n\n");
+    printf("\nYou can type 'dr' at any time to draw a digit, or 'di' to display images from the most recent batch, along with any hand-drawn images.\n\n");
 
     // Allocate memory to store recent batch data
     double** last_batch_images = (double**)malloc(MAX_DISPLAY_IMAGES * sizeof(double*));
@@ -1016,13 +1016,14 @@ int check_user_input() {
     int n = read(STDIN_FILENO, buffer, sizeof(buffer) - 1);
     if (n > 0) {
         buffer[n] = '\0';
+        // Convert to lowercase and check for commands
         for (int i = 0; i < n; i++) {
-            buffer[i] = tolower(buffer[i]);  // Convert to lowercase
+            buffer[i] = tolower(buffer[i]);
         }
-        if (strstr(buffer, "draw") != NULL) {
+        if (strstr(buffer, "dr") != NULL) {
             return 1; // User typed 'draw'
-        } else if (strstr(buffer, "display") != NULL) {
-            return 2; // User typed 'display'
+        } else if (strstr(buffer, "di") != NULL) {
+            return 2; // User typed 'di'
         }
     }
     return 0;
