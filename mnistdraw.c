@@ -28,7 +28,7 @@
 #define MIN_LEARNING_RATE 0.0001     // Minimum learning rate
 
 // User drawing weight factor
-#define USER_DRAWING_WEIGHT 5.0      // Weight factor for user drawings
+#define USER_DRAWING_WEIGHT .5      // Weight factor for user drawings
 
 #define MAX_DISPLAY_IMAGES 10        // Maximum images to display
 
