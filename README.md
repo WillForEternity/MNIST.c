@@ -1,8 +1,7 @@
 
 # MNIST classifier in C with Interactive Drawing 🤖🖼️🖋️ 
-![MNIST.c](Intro.png)
 
-For instructions on how to run this program, scroll down to the bottom and find **Quick Run**. Now, for an in-depth explanation:
+***For instructions on how to run this program, scroll down to the bottom and find **Quick Run**. Now, for an in-depth explanation:***
 
 ## Introduction
 
@@ -10,7 +9,9 @@ The universe is filled with patterns, and patterns can be described using mathem
 
 This project implements a neural network in C that recognizes handwritten digits from the MNIST dataset. Beyond just training on static data, the program allows users to interactively draw digits, classify them, and further train the network on these user-provided examples. Data from both the most recent batch, as well as any hand-drawn data that has been fed into the network can then be displayed as ASCII images. 
 
-MNIST is almost entirely useless, except to demonstrate a simple NN's ability to see patterns and understand the "essence" of objects in order to classify them, in this case, handwritten digits. So, this was really done for learning purposes so that one day I can solve real-world problems. In addition, C can compile into Assembly, so this could be a low-power alternative to a python script that has all sorts of dependencies needed.
+MNIST is almost entirely useless, except to demonstrate a simple NN's ability to see patterns and understand the "essence" of objects in order to classify them, in this case, handwritten digits. So, this was really done for learning purposes so that one day I can solve real-world problems. In addition, C can compile into Assembly, so this could be a low-power alternative to a python script that has all sorts of dependencies needed. 
+
+***To be nice to the network, draw your images in the center of the frame (legibility barely required near end of training). To see the obvious limitations of a model like this given its training data, draw digits in the corners of the frame.***
 
 ---
 
@@ -242,5 +243,7 @@ During Training:
   
 Drawing Mode:
 - A window will pop up where you can draw a digit using your mouse. Press Enter or Escape when you are done drawing. The program will predict your digit and ask you to confirm or correct it. Your drawing can be added to the training data and retrained upon.
-This will also happen when training is fully complete, where the program will evaluate the network on the test dataset and display the accuracy before displaying a drawing window for you to test out the network's capabilties. 
+This will also happen when training is fully complete, where the program will evaluate the network on the test dataset and display the accuracy before displaying a drawing window for you to test out the network's capabilties.
+
+![MNIST.c](Intro.png)
 
