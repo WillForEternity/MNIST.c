@@ -1,6 +1,6 @@
 
 # MNIST Neural Network with Interactive Drawing!! 
-![x](x.png)
+![MNIST.c](Intro.png)
 
 For instructions on how to run this program, scroll down to the bottom and find **Quick Run**. Now, for an in-depth explanation:
 
