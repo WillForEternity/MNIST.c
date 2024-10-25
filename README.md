@@ -2,11 +2,15 @@
 # MNIST Neural Network with Interactive Drawing!! 
 ![x](x.png)
 
+For instructions on how to run this program, scroll down to the bottom and find **Quick Run**. Now, for an in-depth explanation:
+
 ## Introduction
 
-For instructions on how to run, scroll down to the bottom and find **Quick Run**. Now, for an in-depth explanation:
+The universe is filled with patterns, and patterns can be described using mathematical functions. Neural networks are structures created from linking together a large amount of quite simple machines (neurons) and tuning their individual behavior based on the entire network's performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns (by generating a function that could have potentially created that pattern, and therefore having the ability to generalize beyond the dataset it was given). I have demonstrated in a previous project (see `Scratchnn` and `ScratchnnV2` repositories) that even an extremely simple neural network can easily fit to a nonlinear boolean function (e.g. NOR or NAND), which makes them Turing Complete. In addition, there are rigorous proofs that discuss the "universal approximation theorems" - regarding the functions in which networks of varying depth or width can fit to - which conclude that a network of a hypothetical infinite depth could fit to absolutely any function. Deep neural nets are useful!
 
-Neural networks are powerful computational models capable of learning complex patterns from data. This project implements a neural network in C that recognizes handwritten digits from the MNIST dataset. Beyond just training on static data, the program allows users to interactively draw digits, classify them, and further train the network on these user-provided examples. This interactive approach demonstrates the adaptability of neural networks and provides a hands-on experience with machine learning concepts.
+This project implements a neural network in C that recognizes handwritten digits from the MNIST dataset. Beyond just training on static data, the program allows users to interactively draw digits, classify them, and further train the network on these user-provided examples. Data from both the most recent batch, as well as any hand-drawn data that has been fed into the network can then be displayed as ASCII images. 
+
+MNIST is almost entirely useless, except to demonstrate a simple NN's ability to see patterns and understand the "essence" of objects in order to classify them, in this case, handwritten digits. So, this was really done for learning purposes so that one day I can solve real-world problems. In addition, C can compile into Assembly, so this could be a low-power alternative to a python script that has all sorts of dependencies needed.
 
 ---
 
@@ -219,7 +223,7 @@ For each layer `l`:
 
 ### Compilation
 
-Compile the program using the following command:
+Compile the program using the following command (super messy, I know, but this is what worked for me):
 
 ```bash
 gcc -o mnistdraw mnistdraw.c -I/opt/homebrew/include $(sdl2-config --libs) -lm
