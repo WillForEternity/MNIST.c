@@ -11,7 +11,7 @@ This project implements a neural network in C that recognizes handwritten digits
 
 MNIST is almost entirely useless, except to demonstrate a simple NN's ability to see patterns and understand the "essence" of objects in order to classify them, in this case, handwritten digits. So, this was really done for learning purposes so that one day I can solve real-world problems. In addition, C can compile into Assembly, so this could be a low-power alternative to a python script that has all sorts of dependencies needed. 
 
-***To be nice to the network, draw your images in the center of the frame (legibility barely required near end of training). To see the obvious limitations of a model like this given its training data, draw digits in the corners of the frame.***
+***To be nice to the network, draw large digits in the center of the frame (legibility barely required near end of training). To see the obvious limitations of a model like this given its training data, draw digits in the corners of the frame.***
 
 ---
 
