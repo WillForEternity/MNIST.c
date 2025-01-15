@@ -1,6 +1,8 @@
 
 # MNIST classifier in C with Interactive Drawing 🤖🖼️🖋️ 
 
+![MNIST.c](Intro.png)
+
 For instructions on how to run this program, scroll down to the bottom and find **Quick Run**. Now, for an in-depth explanation:
 
 -- 
@@ -246,6 +248,4 @@ During Training:
 Drawing Mode:
 - A window will pop up where you can draw a digit using your mouse. Press Enter or Escape when you are done drawing. The program will predict your digit and ask you to confirm or correct it. Your drawing can be added to the training data and retrained upon.
 This will also happen when training is fully complete, where the program will evaluate the network on the test dataset and display the accuracy before displaying a drawing window for you to test out the network's capabilties.
-
-![MNIST.c](Intro.png)
 
