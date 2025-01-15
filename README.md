@@ -11,7 +11,7 @@ The universe is filled with patterns, and patterns can be described using mathem
 
 This project implements a neural network in C that recognizes handwritten digits from the MNIST dataset. Beyond just training on static data, the program allows users to interactively draw digits, classify them, and further train the network on these user-provided examples. Data from both the most recent batch, as well as any hand-drawn data that has been fed into the network can then be displayed as ASCII images. 
 
-MNIST is almost entirely useless, except to demonstrate a simple NN's ability to see patterns and understand the "essence" of objects in order to classify them, in this case, handwritten digits. So, this was really done for learning purposes so that one day I can solve real-world problems. In addition, C can compile into Assembly, so this could be a low-power alternative to a python script that has all sorts of dependencies needed. 
+MNIST is almost entirely useless, except to demonstrate an NN's ability to see patterns and understand the "essence" of objects in order to classify them, in this case, handwritten digits. So, this was really done for learning purposes so that one day I can solve real-world problems. In addition, C can compile into Assembly, so this could be a low-power alternative to a python script that has all sorts of dependencies needed. 
 
 ***To be nice to the network, draw large digits in the center of the frame (legibility barely required near end of training). To see the obvious limitations of a model like this given its training data, draw digits in the corners of the frame.***
 
